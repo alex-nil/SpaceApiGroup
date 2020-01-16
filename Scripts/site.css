@@ -3,9 +3,13 @@
 
 
 /*Imgs*/
-.carousel-inner img{
+#cardContainer {
+    border: 1px solid black;
     margin: auto;
+    justify-content: center;
 }
 #demoImg {
-    width: 800px;
+    width: 300px;
+    margin-top: 5px;
+    justify-content: center;
 }

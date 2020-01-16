@@ -17,61 +17,20 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Rover 1</a>
+            <a id="camera1" class="nav-link" href="#">Rover 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Rover 2</a>
+            <a id="camera2" class="nav-link" href="#">Rover 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Rover 3</a>
+            <a onclick="createCard()" id="camera3" class="nav-link" href="#">Rover 3</a>
           </li>
         </ul>
       
       </nav>
-
-      <!--Carousel-->
-      <div id="demo" class="carousel slide just" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner justify-content-center">
-          <div class="carousel-item active">
-            <img id="demoImg" src="../SpaceApiGroup/Images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="space">
-            <div class="carousel-caption">
-                <h3>Space</h3>
-                <p>Space Group API</p>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img id="demoImg" src="../SpaceApiGroup/Images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="space">
-            <div class="carousel-caption">
-                <h3>Space</h3>
-                <p>Space Group API</p>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img id="demoImg" src="../SpaceApiGroup/Images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="space">
-            <div class="carousel-caption">
-                <h3>Space</h3>
-                <p>Space Group API</p>
-              </div>
-          </div>
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      
+      <!--Cards -->
+      <div id="containerRow" class="row">
       </div>
 </body>
+<script src="Scripts/script.js"></script>
 </html>
