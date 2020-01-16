@@ -1,3 +1,4 @@
+
 const apiKey = "waNscItAgX6bfsAbwXDWIEvaCgthDkItkEiiLCO0"
 
 // ------------------------------------------------------------------
@@ -16,21 +17,6 @@ function startPageFunction(object) {
     headerText.innerHTML = "Senaste bild " + object.photos[0].rover.name;
 
     container.appendChild(headerText);
-
-    // // Creates image element and adds to body
-    // var startImage = document.createElement("img");
-
-    // // Creates attributes to image element
-    // var attSrc = document.createAttribute('src');
-    // var attAlt = document.createAttribute('alt');
-
-    // attSrc.value = object.photos[0].img_src;
-    // attAlt.value = 'placeholder';
-
-    // startImage.setAttributeNode(attSrc);
-    // startImage.setAttributeNode(attAlt);
-    // container.appendChild(startImage);
-
     containerId.innerHTML += `
         
     <div class="col-md-12">
@@ -40,8 +26,6 @@ function startPageFunction(object) {
 
 
 }
-
-// ------------------------------------------------------------------
 // 
 // ------------------------------------------------------------------
 function GetStuff(object) {
@@ -147,4 +131,5 @@ function removeChilds(parent) {
         parent.removeChild(parent.lastChild);
     }
 }
+
 
