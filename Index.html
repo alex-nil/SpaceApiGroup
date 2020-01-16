@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../SpaceApiGroup/Scripts/site.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+    <link rel="stylesheet" href="./SpaceApiGroup/site.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>SpaceInvadersAPI</title>
 
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a id="camera1" class="nav-link" href="#">Rover 1</a>
-          </li>
-          <li class="nav-item">
-            <a id="camera2" class="nav-link" href="#">Rover 2</a>
-          </li>
-          <li class="nav-item">
-            <a onclick="createCard()" id="camera3" class="nav-link" href="#">Rover 3</a>
-          </li>
-        </ul>
-      
-      </nav>
-      <!--Cards -->
-      <div id="containerRow" class="row">
-      </div>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a id="rover1" name="Curiosity" onclick="GetStuff(this)" class="nav-link" href="#">Curiosity</a>
+                </li>
+                <li class="nav-item">
+                    <a id="rover2" name="Opportunity" onclick="GetStuff(this)" class="nav-link" href="#">Opportunity</a>
+                </li>
+                <li class="nav-item">
+                    <a id="rover3" name="Spirit" onclick="GetStuff(this)" class="nav-link" href="#">Spirit</a>
+                </li>
+                <li>
+                    <input id="datefield" type='date' min='' max='' onclick="getStuff(this.value)" hidden></input>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <input type="text" id="hiddenInput" hidden value="test">
+    <div class="container">
+        <div class="row" id="containerRow">
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 <script src="../SpaceApiGroup/script.js"></script>
 </html>
