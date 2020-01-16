@@ -10,7 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./SpaceApiGroup/site.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>SpaceInvadersAPI</title>
 
 </head>
 
@@ -40,12 +41,16 @@
                 <li class="nav-item">
                     <a id="rover3" name="Spirit" onclick="GetStuff(this)" class="nav-link" href="#">Spirit</a>
                 </li>
+                <li>
+                    <input id="datefield" type='date' min='' max='' onclick="getStuff(this.value)" hidden></input>
+                </li>
             </ul>
         </div>
     </nav>
-
+    <input type="text" id="hiddenInput" hidden value="test">
     <div class="container">
         <div class="row" id="containerRow">
+
         </div>
     </div>
 
